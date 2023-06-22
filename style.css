@@ -1,0 +1,330 @@
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  /* STYLE SECTIONING TAGS */
+  body {
+    background-color: white; 
+    text-align: center;
+  }
+
+  .main {
+    margin-left: 12%;
+    margin-right: 12%;
+    margin-top: 20px;
+    padding-bottom: 50px;
+    padding-top: 30px;
+  }
+  .main p {
+    font-size: 22px;
+    text-align: left;
+  }
+  .main a {
+    font-size: 22px;
+    text-align: left;
+    float: left;
+  }
+
+  .main_ed {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 20px;
+    padding-bottom: 50px;
+    padding-top: 30px;
+  }
+  .main_ed p {
+    font-size: 20px;
+    text-align: left;
+  }
+  .main_ed a {
+    font-size: 20px;
+    text-align: left;
+    float: left;
+  }
+
+  .header{
+    background-size:100% 100%;
+    background-color:#decddd;
+    width: 100%;
+    height: 30%;
+    padding-bottom: 20px;
+  }
+  .header p {
+    font-size: 1.85vw;
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  /* STYLE TEXT */
+  
+  h1 {
+    color: #2B2A44;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    font-size: 4.5vw;
+    text-align: center;
+  }
+  h2 {
+    font-size: 26px;
+    text-align: left;
+  }
+  h3 {
+    font-size: 20px;
+    text-decoration: bold;
+    text-align: left;
+    margin-top: 5px;
+  }
+  h4 {
+    text-align: left;
+  }
+
+  /* STYLE IMAGES */
+  img {
+    float: center
+  }
+  .addBorder {
+    /* Thickness, Style, and Color */
+    border: 3px solid white;
+    padding: 10px;
+    float: center; 
+    border-radius: 0%; 
+    margin-top: 50px; 
+    width: 50%;
+    height: auto; 
+  }
+
+  .portfolio {
+    max-height: 250px;
+  }
+  /* STYLE NAV BAR */
+  /* ul {
+    list-style-type: circle;
+    background-color: #2B2A44;
+    overflow: hidden;
+  }
+  li {
+    float: center;
+  }
+  li a {
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    font-size: 1.5vw;
+    float: right;
+  }
+  li a:hover {
+    background-color: #33324C;
+  }
+  li p {
+    font-size: 18px;
+  } */
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #2B2A44;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 21px;
+  }
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+  
+  /* Dropdown container - needed to position the dropdown content */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Style the dropdown button to fit inside the topnav */
+  .dropdown .dropbtn {
+    font-size: 30px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  /* Style the dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #2B2A44;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Style the links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  .dropdown-content a:visited {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a dark background on topnav links and the dropdown button on hover */
+  .topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: #555;
+    color: white;
+  }
+  
+  /* Add a grey background to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Show the dropdown menu when the user moves the mouse over the dropdown button */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .topnav.responsive .dropdown {float: none;}
+    .topnav.responsive .dropdown-content {position: relative;}
+    .topnav.responsive .dropdown .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+  /*STYLE EDUCATION LIST*/
+  .container {
+    display: grid;
+    align-items: center; 
+    /* column-gap: 5px; */
+    /* column-width: 60%; */
+    grid-template-columns: 65% 35%;
+    background-color: #decddd;
+    padding: 30px;
+    float: left;
+   }
+  
+   .container img {
+    max-width: 100%;
+    max-height:100%;
+    float: left;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  /* STYLE EXPERIENCE */
+  .container_exp {
+    align-items: center; 
+    column-gap: 5px;
+    grid-template-columns: 65% 35%;
+    background-color: #decddd;
+    padding: 30px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+   }
+
+   .container_exp h3 {
+    padding-bottom: 10px;
+   }
+
+   .container_exp img {
+    width: 65%;
+    margin-top: 30px;
+   }
+
+  /*STYLE MAIN PAGE LAYOUT*/
+  .column {
+    float: left;
+    width: 50%;
+  }
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* STYLE PROJECTS */
+  .container_proj {
+    align-items: center; 
+    background-color: #decddd;
+    padding: 30px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding-bottom: 50px;
+   }
+
+.container_proj h3 {
+    text-decoration: italic;
+}
+
+a:visited {
+    /* text-decoration: none; */
+    color:darkslateblue; 
+}
+a {
+    /* text-decoration: none; */
+    color:darkslateblue; 
+}
+.container_proj a{
+    padding-bottom: 30px;
+}
+
+.main_contact {
+  margin-left: 12%;
+  margin-right: 12%;
+  margin-top: 20px;
+  padding-top: 30px;
+  text-align: left;
+}
+.main_contact p {
+  padding-top: 10px;
+  margin-top: 10px;
+  float: left;
+  font-size: 20px;
+  text-align: left;
+  text-decoration: none;
+}
+.main_contact a {
+  padding-top: 10px;
+  float: left;
+  font-size: 20px;
+  text-align: left;
+}
